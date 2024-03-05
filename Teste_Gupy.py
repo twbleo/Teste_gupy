@@ -1,4 +1,4 @@
-"""
+Linguaguem utilizada: Python
 
 
 Exercício 1) Observe o trecho de código abaixo: ao final do processamento, qual será o valor da variável SOMA?
@@ -6,13 +6,20 @@ Exercício 1) Observe o trecho de código abaixo: ao final do processamento, qua
 Resposta : 91 pois , 1+2+3+4+5+6+7+8+9+10+11+12+13 = 91
 
 
-
-
-
-
 Exercício 2 :
 
+numero = int(input("Digite um número para verificar se existe na sequencia fibonnaci: "))
 
+fb = [0, 1]
+
+while fb[-1] < numero:
+    numero_apos = fb[-1] + fb[-2]
+    fb.append(numero_apos)
+
+if numero in fb:
+    print(f"{numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"{numero} não pertence à sequência de Fibonacci.")
 
 
 
@@ -29,7 +36,7 @@ d) 4, 16, 36, 64, ___ --> 108
 
 e) 1, 1, 2, 3, 5, 8, ____ --> 13
 
-f) 2,10, 12, 16, 17, 18, 19, ____
+f) 2,10, 12, 16, 17, 18, 19, __ --> 20
 
 
 
@@ -46,7 +53,6 @@ ex: NA 2 visita a lampada acessa seria do 1 interruptor , quando eu ligasse o 2 
 
 5)
 
-"""
 Frase_original = str(input("Insiria a frase: "))
 
 frase_invertida = Frase_original[::-1]
